@@ -118,7 +118,18 @@
 		NSString *result = [item attributeStringValueForName:attrName];
 		if (result)
 		{
-			return [result lowercaseString];
+			//Do not want to lower case the resource (it is case sensitive)
+            if ([attrName isEqualToString:@"jid"])
+            {
+                NSRange range = [result rangeOfString:@"/" options:NSBackwardsSearch];
+                if (range.location != NSNotFound) {
+                    NSString *prefix = [result substringToIndex:range.location + 1];
+                    prefix = [prefix lowercaseString];
+                    NSString *resouce = [result substringFromIndex:range.location + 1];
+                    return [NSString stringWithFormat:@"%@%@",prefix,resouce];
+                }
+            }
+            return [result lowercaseString];
 		}
 	}
 	

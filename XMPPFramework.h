@@ -31,7 +31,7 @@
 // 
 //#import "XMPPCoreDataStorage.h"
 //
-//#import "XMPPReconnect.h"
+#import "XMPPReconnect.h"
 //
 //#import "XMPPRoster.h"
 //#import "XMPPRosterMemoryStorage.h"
@@ -43,9 +43,9 @@
 //
 //#import "XMPPPrivacy.h"
 //
-//#import "XMPPMUC.h"
-//#import "XMPPRoom.h"
-//#import "XMPPRoomMemoryStorage.h"
+#import "XMPPMUC.h"
+#import "XMPPRoom.h"
+#import "XMPPRoomMemoryStorage.h"
 //#import "XMPPRoomCoreDataStorage.h"
 //#import "XMPPRoomHybridStorage.h"
 //
@@ -70,7 +70,7 @@
 //
 //#import "XMPPMessage+XEP_0184.h"
 //
-//#import "XMPPPing.h"
+#import "XMPPPing.h"
 //#import "XMPPAutoPing.h"
 //
 //#import "XMPPTime.h"
