@@ -23,7 +23,7 @@
   #define DEFAULT_KEEPALIVE_INTERVAL 120.0 //  2 Minutes
 #else
   #define MIN_KEEPALIVE_INTERVAL      10.0 // 10 Seconds
-  #define DEFAULT_KEEPALIVE_INTERVAL 300.0 //  5 Minutes
+  #define DEFAULT_KEEPALIVE_INTERVAL  30.0 //  5 Minutes (framework default)
 #endif
 
 extern NSString *const XMPPStreamErrorDomain;
